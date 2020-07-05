@@ -1,0 +1,39 @@
+{
+  "name": "@range3/priconne-squad-seeker",
+  "version": "0.1.0-alpha.1",
+  "description": "PrincessConnect Re:DIVE Clan Battle Tool",
+  "main": "src/index.js",
+  "bin": {
+    "priconne-squad-seeker": "bin/priconne-squad-seeker"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "mocha --recursive --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:range3/priconne-squad-seeker.git"
+  },
+  "author": "range3 (https://github.com/range3/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/luxon": "^1.24.1",
+    "chai": "^4.2.0",
+    "eslint": "^7.3.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.0.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "luxon": "^1.24.1",
+    "moji": "^0.5.1",
+    "xregexp": "^4.3.0",
+    "youtube-v3-api": "^1.1.1"
+  }
+}
