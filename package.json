@@ -1,6 +1,6 @@
 {
   "name": "@range3/priconne-squad-seeker",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "PrincessConnect Re:DIVE Clan Battle Tool",
   "main": "build/main.js",
   "bin": {
