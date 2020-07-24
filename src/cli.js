@@ -24,14 +24,14 @@ if (!program.phase && !program.boss) {
 
   const items = await seeker.seek(program)
 
-  items
-    .sort((a, b) => Number(a.damage) - Number(b.damage))
-    .forEach(i => {
-      const dmgFormed = i.damage ? `${i.damage / 10000}万` : ''
-      console.log(
-        `###${i.phase || '?'}段階目::${i.bosses.join(' ')} ${i.squadType || ''}${dmgFormed} ${i.operationType || ''}`)
-      console.log(`${i.channelTitle}: ${i.url}`)
-      console.log(`${i.publishedAt.toLocaleString(DateTime.DATETIME_MED)}\n`)
-    })
+  console.log(JSON.stringify(items
+    .sort((a, b) => Number(a.damage) - Number(b.damage))))
+  // .forEach(i => {
+  //   const dmgFormed = i.damage ? `${i.damage / 10000}万` : ''
+  //   console.log(
+  //     `###${i.phase || '?'}段階目::${i.bosses.join(' ')} ${i.squadType || ''}${dmgFormed} ${i.operationType || ''}`)
+  //   console.log(`${i.channelTitle}: ${i.url}`)
+  //   console.log(`${i.publishedAt.toLocaleString(DateTime.DATETIME_MED)}\n`)
+  // })
 })()
   .catch(err => console.error(require('util').inspect(err, false, null, true)))
