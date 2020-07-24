@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "backpack-core/babel",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": 10
+        }
+      }
+    ]
+  ]
+}
