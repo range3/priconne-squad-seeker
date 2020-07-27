@@ -60,7 +60,7 @@ class PriconneSquadSeeker {
   }
 
   _makeSearchQuery (phase, boss) {
-    let query = 'intitle:"プリコネ"'
+    let query = '"プリコネ"'
     if (phase) {
       query += ` intitle:"${phase}段階目"`
     }
