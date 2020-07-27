@@ -3,6 +3,7 @@ const SquadType = require('./squad-type')
 const OperationType = require('./operation-type')
 const Damage = require('./damage')
 const Bosses = require('./bosses')
+const OneTurnKill = require('./one-turn-kill')
 
 class TitleNormalizer {
   constructor (raw) {
@@ -22,6 +23,11 @@ class TitleNormalizer {
   get squadType () {
     const squadType = new SquadType(this.raw)
     return squadType.get()
+  }
+
+  get oneTurnKill () {
+    const oneTurnKill = new OneTurnKill(this.raw)
+    return oneTurnKill.get() || false
   }
 
   get damage () {

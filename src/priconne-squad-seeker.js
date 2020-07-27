@@ -52,6 +52,7 @@ class PriconneSquadSeeker {
           bosses: n.bosses,
           squadType: n.squadType,
           damage: n.damage,
+          oneTurnKill: n.oneTurnKill,
           operationType: n.operationType,
         }
       })
