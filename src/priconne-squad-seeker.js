@@ -60,7 +60,6 @@ class PriconneSquadSeeker {
   }
 
   _makeSearchQuery (phase, boss) {
-    console.log(boss)
     const bosses = typeof boss === 'string' ? [boss] : boss
 
     let query = ''
