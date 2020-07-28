@@ -60,12 +60,17 @@ class PriconneSquadSeeker {
   }
 
   _makeSearchQuery (phase, boss) {
-    let query = '"プリコネ"'
+    console.log(boss)
+    const bosses = typeof boss === 'string' ? [boss] : boss
+
+    let query = ''
+    if (bosses) {
+      query += bosses
+        .map(boss => `intitle:"${boss}"`)
+        .join(' OR ')
+    }
     if (phase) {
       query += ` intitle:"${phase}段階目"`
-    }
-    if (boss) {
-      query += ` intitle:"${boss}"`
     }
     return query
   }

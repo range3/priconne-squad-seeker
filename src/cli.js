@@ -9,7 +9,7 @@ const now = DateTime.fromObject({ zone: 'Asia/Tokyo' })
 program
   .name('priconne-squad-seeker')
   .option('-p, --phase <number>', 'Phase')
-  .option('-b, --boss <value>', 'Boss name')
+  .option('-b, --boss <values>', 'Boss name', (val, ret) => [...(ret || []), val])
   .option('-y, --year  <number>', 'Year clan-battle organized', now.year)
   .option('-m, --month <number>', 'Month clan-battle organized', now.month)
   .parse(process.argv)
