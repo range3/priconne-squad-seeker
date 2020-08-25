@@ -21,3 +21,23 @@ $ API_KEY=your-youtube-data-api-key npx @range3/priconne-squad-seeker --help
     month: 6,
   })
 ```
+
+### Output Example
+```json
+[
+  {
+    "videoId":"exampleIdidid",
+    "url":"https://youtu.be/exampleIdidid",
+    "title":"[プリコネR] フルオート ワイバーン ４段階目 物理 [1100万]",
+    "channelTitle":"ほげほげ",
+    "publishedAt":"2020-07-30T08:43:35.000-00:00",
+    "phase":4,
+    "bosses":["ワイバーン"],
+    "squadType":"物理",
+    "damage":11000000,
+    "oneTurnKill":false,
+    "operationType":"フルオート"
+  },
+  ...
+]
+```
