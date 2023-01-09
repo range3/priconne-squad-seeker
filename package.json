@@ -33,7 +33,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^5.1.0",
-    "luxon": "^1.24.1",
+    "luxon": "^2.5.2",
     "moji": "^0.5.1",
     "xregexp": "^4.3.0",
     "youtube-v3-api": "^1.1.1"
